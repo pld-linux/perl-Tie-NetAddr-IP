@@ -6,7 +6,7 @@
 %define	pdir	Tie
 %define	pnam	NetAddr-IP
 Summary:	Tie::NetAddr::IP - Implements a Hash where the key is a subnet
-#Summary(pl):	
+Summary(pl):	Tie::NetAddr::IP - implementacja hasza z podsieci± jako kluczem
 Name:		perl-Tie-NetAddr-IP
 Version:	1.51
 Release:	1
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Tie/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	562a9e63cc3e0cf0803778922f285ff8
+URL:		http://search.cpan.org/dist/Tie-NetAddr-IP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -25,11 +26,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module overloads hashes so that the key can be a subnet as in
-B<NetAddr::IP>. When looking values up, an interpretation will be made
-to find the given key B<within> the subnets specified in the hash.
+NetAddr::IP. When looking values up, an interpretation will be made to
+find the given key within the subnets specified in the hash.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ przeci±¿a tablice asocjacyjne tak, ¿e klucz mo¿e byæ
+podsieci± tak± jak w NetAddr::IP. Przy wyszukiwaniu warto¶ci
+interpreter wyszuka podany klucz w podsieciach zdefiniowanych w haszu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_vendorlib}/Tie/NetAddr/
+%{perl_vendorlib}/Tie/NetAddr
 %{_mandir}/man3/*
