@@ -6,7 +6,7 @@
 %define	pdir	Tie
 %define	pnam	NetAddr-IP
 Summary:	Tie::NetAddr::IP - Implements a Hash where the key is a subnet
-Summary(pl):	Tie::NetAddr::IP - implementacja hasza z podsieci± jako kluczem
+Summary(pl.UTF-8):   Tie::NetAddr::IP - implementacja hasza z podsieciÄ… jako kluczem
 Name:		perl-Tie-NetAddr-IP
 Version:	1.51
 Release:	1
@@ -29,9 +29,9 @@ This module overloads hashes so that the key can be a subnet as in
 NetAddr::IP. When looking values up, an interpretation will be made to
 find the given key within the subnets specified in the hash.
 
-%description -l pl
-Ten modu³ przeci±¿a tablice asocjacyjne tak, ¿e klucz mo¿e byæ
-podsieci± tak± jak w NetAddr::IP. Przy wyszukiwaniu warto¶ci
+%description -l pl.UTF-8
+Ten moduÅ‚ przeciÄ…Å¼a tablice asocjacyjne tak, Å¼e klucz moÅ¼e byÄ‡
+podsieciÄ… takÄ… jak w NetAddr::IP. Przy wyszukiwaniu wartoÅ›ci
 interpreter wyszuka podany klucz w podsieciach zdefiniowanych w haszu.
 
 %prep
