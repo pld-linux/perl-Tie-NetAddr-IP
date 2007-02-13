@@ -6,7 +6,7 @@
 %define	pdir	Tie
 %define	pnam	NetAddr-IP
 Summary:	Tie::NetAddr::IP - Implements a Hash where the key is a subnet
-Summary(pl.UTF-8):   Tie::NetAddr::IP - implementacja hasza z podsiecią jako kluczem
+Summary(pl.UTF-8):	Tie::NetAddr::IP - implementacja hasza z podsiecią jako kluczem
 Name:		perl-Tie-NetAddr-IP
 Version:	1.51
 Release:	1
