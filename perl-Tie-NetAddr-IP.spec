@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	NetAddr-IP
 Summary:	Tie::NetAddr::IP - Implements a Hash where the key is a subnet
