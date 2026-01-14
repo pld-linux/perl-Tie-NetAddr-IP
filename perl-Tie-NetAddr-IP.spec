@@ -8,7 +8,7 @@ Summary:	Tie::NetAddr::IP - Implements a Hash where the key is a subnet
 Summary(pl.UTF-8):	Tie::NetAddr::IP - implementacja hasza z podsiecią jako kluczem
 Name:		perl-Tie-NetAddr-IP
 Version:	1.51
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
